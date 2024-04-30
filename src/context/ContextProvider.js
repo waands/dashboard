@@ -9,7 +9,7 @@ const initialState = {
     notiification: false,
 }
 
-export const ContectProvider = ({children}) => {
+export const ContextProvider = ({children}) => {
     const [activeMenu, setActiveMenu] = useState(true);
     const [isClicked, setIsClicked] = useState(initialState)
 
