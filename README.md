@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # This project can be visualized here
 
-This prject was deployed here: (https://vercel.com/waands-projects/dashboard_react_tailwind_dummy_data)
+This prject was deployed here: (https://dashboardreacttailwinddummydata-6fltda69b-waands-projects.vercel.app)
 
 ## Available Scripts
 
