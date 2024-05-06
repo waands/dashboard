@@ -37,6 +37,8 @@ const Navbar = () => {
     screenSize,
     setScreenSize,
     currentColor,
+    setSeeNotifications,
+    seeNotifications
   } = useStateContext();
 
   useEffect(() => {
@@ -84,8 +86,8 @@ const Navbar = () => {
         <NavButton
           title="Notifications"
           dotColor="#03C9D7"
-          customFunc={() => handleClick("notification")}
-          color={currentColor}
+          customFunc={() => {handleClick("notification"); setSeeNotifications(prevSeeNotifications => !prevSeeNotifications)}}
+          color={currentColor}        
           icon={<RiNotification3Line />}
         />
         <TooltipComponent content="Profile" position="BottomCenter">
@@ -106,7 +108,7 @@ const Navbar = () => {
 
         {isClicked.cart && <Cart />}
         {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
+        {isClicked.notification && seeNotifications && <Notification />}
         {isClicked.userProfile && <UserProfile />}
       </div>
     </div>
