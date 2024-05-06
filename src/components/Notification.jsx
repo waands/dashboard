@@ -43,7 +43,7 @@ const Notification = () => {
           </div>
         </div>
       ))}
-      <div className="mt-5">
+      <div className="mt-5" onClick={() => setSeeNotifications(false)}>
         <Button color="white" bgColor={currentColor} text="Ver todas as notificações" borderRadius="10px" width="full" />
       </div>
       </div>

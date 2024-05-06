@@ -41,6 +41,10 @@ const Navbar = () => {
     seeNotifications,
     setSeeMessages,
     seeMessages,
+    setSeeCart,
+    seeCart,
+    seeProfile, 
+    setSeeProfile,
   } = useStateContext();
 
   useEffect(() => {
@@ -74,7 +78,7 @@ const Navbar = () => {
       <div className="flex">
         <NavButton
           title="Cart"
-          customFunc={() => handleClick("cart")}
+          customFunc={() => {handleClick("cart"); setSeeCart(prevSeeCart => !prevSeeCart)}}
           color={currentColor}
           icon={<FiShoppingCart />}
         />
@@ -95,7 +99,7 @@ const Navbar = () => {
         <TooltipComponent content="Profile" position="BottomCenter">
           <div
             className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg dark:hover:bg-[#42464D]"
-            onClick={() => handleClick("userProfile")}
+            onClick={() => {handleClick("userProfile"); setSeeProfile(prevSeeProfile => !prevSeeProfile)}}
           >
             <img className="rounded-full w-8 h-8" src={avatar} />
             <p>
@@ -108,10 +112,10 @@ const Navbar = () => {
           </div>
         </TooltipComponent>
 
-        {isClicked.cart && <Cart />}
+        {isClicked.cart && seeCart && <Cart /> }
         {isClicked.chat && seeMessages && <Chat />}
         {isClicked.notification && seeNotifications && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
+        {isClicked.userProfile && seeProfile && <UserProfile />}
       </div>
     </div>
   );

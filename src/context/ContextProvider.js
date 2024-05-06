@@ -23,6 +23,7 @@ export const ContextProvider = ({ children }) => {
   const [seeNotifications, setSeeNotifications] = useState(false);
   const [seeMessages, setSeeMessages] = useState(false);
   const [seeCart, setSeeCart] = useState(false);
+  const [seeProfile, setSeeProfile] = useState(false);
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -62,6 +63,8 @@ export const ContextProvider = ({ children }) => {
         setSeeMessages,
         seeCart, 
         setSeeCart,
+        seeProfile, 
+        setSeeProfile,
       }}
     >
       {children}

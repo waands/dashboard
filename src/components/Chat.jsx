@@ -59,13 +59,14 @@ const Chat = () => {
             </div>
           </div>
         ))}
-        <div className="mt-5">
+        <div className="mt-5" onClick={() => setSeeMessages(false)}>
           <Button
+            
             color="white"
             bgColor={currentColor}
             text="Ver todas as mensagens"
             borderRadius="10px"
-            width=""
+            width="full"
           />
         </div>
       </div>
