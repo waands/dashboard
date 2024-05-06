@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineCancel, MdOutlineUTurnLeft } from "react-icons/md";
+import { MdOutlineCancel } from "react-icons/md";
 
 import { Button } from ".";
 import { chatData } from "../data/dummy";
@@ -28,7 +28,7 @@ const Notification = () => {
             type="button"
             onClick={() => setSeeNotifications(false)}
             style={{ color: "rgb(153, 171, 180)", borderRadius: "50%" }}
-            className="text-2xl p-3 dark:hover:bg-main-dark-bg hover:drop-shadow-xl hover:bg-light-gray"
+            className="text-2xs p-3 dark:hover:bg-main-dark-bg hover:drop-shadow-xl hover:bg-light-gray"
           >
         <MdOutlineCancel />
         </button>

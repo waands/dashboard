@@ -16,7 +16,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
       type="button"
       onClick={customFunc}
       style={{ color }}
-      className="relative text-xl rounded-full p-3 hover:bg-light-gray"
+      className="relative text-xl rounded-full p-3 hover:bg-light-gray dark:hover:bg-[#42464D]"
     >
       <span
         style={{ background: dotColor }}
@@ -38,7 +38,9 @@ const Navbar = () => {
     setScreenSize,
     currentColor,
     setSeeNotifications,
-    seeNotifications
+    seeNotifications,
+    setSeeMessages,
+    seeMessages,
   } = useStateContext();
 
   useEffect(() => {
@@ -79,7 +81,7 @@ const Navbar = () => {
         <NavButton
           title="Chat"
           dotColor="#03C9D7"
-          customFunc={() => handleClick("chat")}
+          customFunc={() => {handleClick("chat"); setSeeMessages(prevSeeMessages => !prevSeeMessages)}}
           color={currentColor}
           icon={<BsChatLeft />}
         />
@@ -92,7 +94,7 @@ const Navbar = () => {
         />
         <TooltipComponent content="Profile" position="BottomCenter">
           <div
-            className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
+            className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg dark:hover:bg-[#42464D]"
             onClick={() => handleClick("userProfile")}
           >
             <img className="rounded-full w-8 h-8" src={avatar} />
@@ -107,7 +109,7 @@ const Navbar = () => {
         </TooltipComponent>
 
         {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />}
+        {isClicked.chat && seeMessages && <Chat />}
         {isClicked.notification && seeNotifications && <Notification />}
         {isClicked.userProfile && <UserProfile />}
       </div>
