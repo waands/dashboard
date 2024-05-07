@@ -490,7 +490,7 @@ export const links = [
         icon: <AiOutlineShoppingCart />,
       },
       {
-        traducao: 'empregados',
+        traducao: 'funcionários',
         name: 'employees',
         icon: <IoMdContacts />,
       },

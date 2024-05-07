@@ -8,7 +8,7 @@ const change = (args) => {document.getElementById('preview').style.backgroundCol
 const ColorPicker = () => {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="App" title="Color Picker" />
+      <Header category="App" title="Seletor de Cores" />
       <div className="text-center">
         <div id="preview" />
         <div className="flex justify-center items-center gap-20 flex-wrap">
