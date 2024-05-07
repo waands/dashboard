@@ -474,6 +474,7 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
+        traducao: 'Loja Virtual',
         name: 'ecommerce',
         icon: <FiShoppingBag />,
       },
@@ -481,17 +482,20 @@ export const links = [
   },
 
   {
-    title: 'Pages',
+    title: 'Páginas',
     links: [
       {
+        traducao: 'Pedidos',
         name: 'orders',
         icon: <AiOutlineShoppingCart />,
       },
       {
+        traducao: 'empregados',
         name: 'employees',
         icon: <IoMdContacts />,
       },
       {
+        traducao: 'clientes',
         name: 'customers',
         icon: <RiContactsLine />,
       },
@@ -501,56 +505,68 @@ export const links = [
     title: 'Apps',
     links: [
       {
+        traducao: 'calendário',
         name: 'calendar',
         icon: <AiOutlineCalendar />,
       },
       {
+        traducao: 'kanban',
         name: 'kanban',
         icon: <BsKanban />,
       },
       {
+        traducao: 'editor',
         name: 'editor',
         icon: <FiEdit />,
       },
       {
+        traducao: 'seletor de cores',
         name: 'color-picker',
         icon: <BiColorFill />,
       },
     ],
   },
   {
-    title: 'Charts',
+    title: 'Gráficos',
     links: [
       {
+        traducao: 'linha',
         name: 'line',
         icon: <AiOutlineStock />,
       },
       {
+        traducao: 'área',
         name: 'area',
         icon: <AiOutlineAreaChart />,
       },
 
       {
+        traducao: 'barras',
         name: 'bar',
         icon: <AiOutlineBarChart />,
       },
       {
+        traducao: 'torta',
         name: 'pie',
         icon: <FiPieChart />,
       },
       {
+        traducao: 'financeiro',
         name: 'financial',
         icon: <RiStockLine />,
       },
       {
+        traducao: 'mapeamento de cores',
         name: 'color-mapping',
         icon: <BsBarChart />,
       },
       {
+        traducao: 'pirâmide',
         name: 'pyramid',
         icon: <GiLouvrePyramid />,
       },
       {
+        traducao: 'empilhado',
         name: 'stacked',
         icon: <AiOutlineBarChart />,
       },
@@ -561,24 +577,24 @@ export const links = [
 export const cartData = [
   {
     image:
-      product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
+      product7,
+    name: 'Sorvete de caramelo',
+    category: 'Produto lácteo',
+    price: 'R$250',
   },
   {
     image:
       product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
+    name: 'Tomate fresco supremo',
+    category: 'Item vegetal',
+    price: 'R$450',
   },
   {
     image:
-      product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
+      product5,
+    name: 'Doce de cor vermelha',
+    category: 'Alimentos',
+    price: 'R$190',
   },
 ];
 
@@ -586,29 +602,29 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    message: 'Roman se juntou à equipe',
+    desc: 'Parabenize-o',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    message: 'Nova mensagem recebida',
+    desc: 'Salma te enviou uma nova mensagem',
     time: '11:56 AM',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
+    message: 'Novo pagamento recebido',
+    desc: 'Verifique seus ganhos',
     time: '4:39 AM',
   },
   {
     image:
       avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
+    message: 'Tarefas concluídas pela Jolly',
+    desc: 'Atribua novas tarefas a ela',
     time: '1:12 AM',
   },
 ];
@@ -618,7 +634,7 @@ export const earningData = [
     icon: <MdOutlineSupervisorAccount />,
     amount: '39,354',
     percentage: '-4%',
-    title: 'Customers',
+    title: 'Clientes',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
@@ -627,7 +643,7 @@ export const earningData = [
     icon: <BsBoxSeam />,
     amount: '4,396',
     percentage: '+23%',
-    title: 'Products',
+    title: 'Produtos',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
@@ -636,7 +652,7 @@ export const earningData = [
     icon: <FiBarChart />,
     amount: '423,39',
     percentage: '+38%',
-    title: 'Sales',
+    title: 'Vendas',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
 
@@ -646,7 +662,7 @@ export const earningData = [
     icon: <HiOutlineRefresh />,
     amount: '39,354',
     percentage: '-12%',
-    title: 'Refunds',
+    title: 'Reembolsos',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
@@ -849,22 +865,22 @@ export const themeColors = [
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
-    title: 'My Profile',
-    desc: 'Account Settings',
+    title: 'Meu Perfil',
+    desc: 'Configurações da Conta',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
   {
     icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
+    title: 'Caixa de entrada',
+    desc: 'Mensagens & Emails',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
   {
     icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
+    title: 'Tarefas',
+    desc: 'Tarefas Pendentes & Diárias',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
   },

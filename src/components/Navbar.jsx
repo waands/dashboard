@@ -103,7 +103,7 @@ const Navbar = () => {
           >
             <img className="rounded-full w-8 h-8" src={avatar} />
             <p>
-              <span className="text-gray-400 text-14">Hi, </span>{" "}
+              <span className="text-gray-400 text-14">Olá, </span>{" "}
               <span className="text-gray-400 font-bold ml-1 text-14">
                 Wanderson
               </span>
